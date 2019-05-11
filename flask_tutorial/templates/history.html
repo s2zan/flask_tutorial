@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Image Upload</title>
+	</head>
+	<body>
+		<h1>Upload History</h1>
+		<table>
+			<th>no</th>
+			<th>datetime</th>
+			<th>path</th>
+			<th>result</th>
+			
+			{% for row in rows %}
+				<tr>
+					<td style="padding: 10px;">{{row[0]}}</td>
+					<td style="padding: 10px;">{{row[1]}}</td>
+					<td style="padding: 10px;">{{row[2]}}</td>
+					<td style="padding: 10px;">{{row[3]}}</td>
+				</tr>
+ 			{% endfor %}
+		</table>
+	</body>
+</html>
